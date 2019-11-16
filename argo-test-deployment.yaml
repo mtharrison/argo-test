@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: argo-test
+  labels:
+    app: argo-test
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: argo-test
+  template:
+    metadata:
+      labels:
+        app: argo-test
+    spec:
+      containers:
+      - name: argo-test
+        image: mtharrison/argo-test:v1.1.0
+        ports:
+        - containerPort: 3000
