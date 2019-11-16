@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: argo-test
-        image: mtharrison/argo-test:v1.2.0
+        image: mtharrison/argo-test:v1.3.0
         ports:
         - containerPort: 3000
