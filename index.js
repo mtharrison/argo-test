@@ -15,7 +15,7 @@ const init = async () => {
         path: '/{p*}',
         handler: function (request, h) {
 
-            return `Hello, world 3! ${Os.hostname()}`;
+            return `Hello,Chanya! ${Os.hostname()}`;
         }
     })
 
